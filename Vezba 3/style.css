@@ -1,0 +1,99 @@
+body{
+    margin: 0;
+}
+
+.container{
+    display:flex;
+}
+
+.container1{
+    margin: 20px 0 0 20px;
+    width: 30%;
+    height: 35%;
+    background-color: rgb(41, 36, 36);
+    border-radius: 5%;
+    border-style: solid;
+    border-color: rgb(194, 174, 174);
+}
+
+.container1 > *{
+    margin: 22px;
+}
+
+.container1 > h1,span{
+    color:white;
+}
+
+#slika1{
+    width: 8%;
+    height: 8%;
+}
+
+#slika2{
+    display: block;
+    width:90%;
+    height: 220px;
+    justify-content: center;
+}
+
+.logo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+}
+
+a{
+    margin-bottom: 10px;
+    color:white;
+}
+
+.container1:hover{
+    background-color: rgb(32, 21, 21); 
+} 
+
+#flag{
+    color:white;
+    float:right;
+    font-size: 25px;
+    margin-right: 10%;
+    visibility: hidden;
+}
+
+.container2{
+    margin: 20px 0 0 20px;
+    width: 30%;
+    height: 35%;
+    background-color: rgb(41, 36, 36);
+    border-radius: 5%;
+    border-style: solid;
+    border-color: rgb(194, 174, 174);
+}
+
+.container2 > *{
+    margin: 22px;
+}
+
+.container2 > h1,span{
+    color:white;
+}
+
+.container2:hover{
+    background-color: rgb(32, 21, 21); 
+} 
+
+.container2:hover #flag{
+    visibility: visible;
+} 
+
+.container1:hover #flag{
+    visibility: visible;
+}
+
+.container1 a{
+    text-decoration: none;
+}
+
+.container2 a{
+    text-decoration: none;
+}

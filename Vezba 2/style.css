@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+}
+.prvi{
+    max-width: 60%;
+}
+
+.drugi > *{
+    vertical-align: middle;
+    margin : 0px;
+}
+
+.drugid{
+    display: inline-block;
+    text-align: center;
+    width: 45%;
+}
+
+.treci > *{
+    vertical-align: middle;
+    margin:0px;
+}
+
+.trecit{
+    display: inline-block; 
+    text-align: center;
+    width:45%;
+    margin-top: 20%;
+}
+
+.slika2{
+    height:auto;
+    width: 50%;    
+    float: right;
+}
+
+.slikac{
+    height:auto;
+    width: 50%;
+}
+
+p{
+    color: rgb(163, 157, 157);
+    /* font-family: "Times New Roman", Times, serif; */
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+button:hover{
+    background-color: rgb(19, 12, 12);
+}
+
+button{
+    border-radius: 8px;
+    height: 18%;
+    width: 19%;
+    color: rgb(160, 140, 140);  
+    background-color: rgb(36, 32, 32); 
+}
+
+h1{
+    font-size: 34px;
+}
