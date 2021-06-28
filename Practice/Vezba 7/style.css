@@ -1,0 +1,183 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.top-nav{
+    background-color: #282A35;
+    width: 100%;
+    height: 5vh;
+    padding-top: 1%;
+    display: flex;
+    flex-direction: row;
+}
+
+.content{
+    width:70%;
+}
+.content > a{
+    text-decoration: none;
+    color:#f1f1f1;
+}
+
+.content > a:hover{
+    background-color: #000;
+}
+
+.content > i{
+    padding-left: 2%;
+    height: 100%;
+}
+
+.content a{
+    padding-left: 2%;
+}
+
+
+.content-right{
+    width: 26%;
+    padding-left:4%;
+    margin-right: 2%;
+
+}
+
+.content-right > a{
+    text-decoration: none;
+    color: #f1f1f1;
+    margin:0px 15px;
+}
+
+.main{
+    width: 100%;
+    height: 96vh;
+}
+
+button{
+    font-size: 20px;
+    background-color: #04AA6D;
+    color: #ffffff;
+}
+
+button > i{
+    opacity: 80%;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+button:hover{
+    background-color: #059862;
+}
+
+.main-content{
+    padding-left: 10%;
+    padding-right: 20%;
+}
+
+.border{
+    border: 1px solid black;
+    background-color: rgb(238, 220, 220);
+}
+
+#b_one{
+    float:left;
+}
+
+#b_two{
+    float:right;
+}
+
+#hamb{
+    visibility: hidden;
+}
+
+@media screen and (max-width: 1600px) {
+    #jquery{
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 1340px) {
+    #java{
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 1290px){
+    #w3css{
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 1190px){
+    #how-to{
+        visibility: hidden;
+    }
+    #hamb{
+        visibility: visible;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    #bootstrap{
+        visibility: hidden;
+    }
+    a{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 950px){
+    #php{
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 900px){
+    #python{
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 880px){
+    #sql{
+        visibility: hidden;
+    }
+    .top-nav{
+        height: 6vh;
+        padding-top: 30px;
+        padding-left: 10px;
+    }
+    a{
+        font-size: 20px;
+    }
+    .content-right{
+        padding: 0;
+    }
+    .content{
+        padding-left: 3px;
+        letter-spacing: 2px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    #js{
+        visibility: hidden;
+    }
+    content, .content-right{
+        width:50%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    #css{
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 580px){
+    #html{
+        visibility: hidden;
+    }
+}
+
+/*#TESTED: Page is responsive till 358px : 569px  width:height ratio */

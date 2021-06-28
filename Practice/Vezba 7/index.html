@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediaQueries</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top-nav">
+        <div class="content">
+            <a id="hamb" href="#"><i class="fas fa-bars"></i></a>
+            <a href="#"><i class="fas fa-home"></i></a>
+            <a id="html" href="#">HTML</a>
+            <a id="css" href="#">CSS</a>
+            <a id="js" href="#">JAVASCRIPT</a>
+            <a id="sql" href="#">SQL</a>
+            <a id="python" href="#">PYTHON</a>
+            <a id="php" href="#">PHP</a>
+            <a id="bootstrap" href="#">BOOTSTRAP</a>
+            <a id="how-to" href="#">HOW TO</a>
+            <a id="w3css" href="#">W3.CSS</a>
+            <a id="java" href="#">JAVA</a>
+            <a id="jquery" href="#">JQUERY</a>
+        </div>
+        <div class="content-right">
+            <a href="#"><i class="fas fa-moon"></i></a>
+            <a href="#"><i class="fas fa-globe-americas"></i></a>
+            <a href="#"><i class="fas fa-search"></i></a>
+        </div>
+    </div>
+        <div class="main">
+        <div class="side-nav">
+
+        </div>
+        <div class="main-content">
+            <h1>CSS Media Queries - Examples</h1>
+            <button id="b_one"><i class="fas fa-less-than"></i>Previous</button>
+            <button id="b_two">Next<i class="fas fa-greater-than"></i></button>
+            <h2><br>CSS2 Introduced Media Types</h2>
+            <p>The @media rule, introduced in CSS2, made it possible to define different style rules for different media types.</p>
+                <p>Examples: You could have one set of style rules for computer screens, one for printers, one for handheld devices, one for television-type devices, and so on.</p>
+                <p>Unfortunately these media types never got a lot of support by devices, other than the print media type.</p>
+            <h2>CSS3 Introduced Media Queries</h2>
+            <p>Media queries in CSS3 extended the CSS2 media types idea: Instead of looking for a type of device, they look at the capability of the device.</p>
+            <p>Media queries can be used to check many things, such as:</p>
+            <ul>
+                <li>width and height of the viewport</li>
+                <li>width and height of the device</li>
+                <li>orientation (is the tablet/phone in landscape or portrait mode?)</li>
+                <li>resolution</li>
+            </ul>
+            <p>Using media queries are a popular technique for delivering a tailored style sheet to desktops, laptops, tablets, and mobile phones (such as iPhone and Android phones).</p>
+            <h2>Media Query Syntax</h2>
+            <p>A media query consists of a media type and can contain one or more expressions, which resolve to either true or false.</p>
+            <div class="border">
+                <p style="color:rgb(110, 37, 77);">@media not|only mediatype and (expression)</p><span>{</span>
+                <p style="color: red;">CSS-Code;</p>
+                <p>}</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
