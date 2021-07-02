@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(https://raw.githubusercontent.com/lasjorg/fcc-form-example-image/master/67103817-7c51e200-f18b-11e9-975f-f74561336a9a-lj.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.form{
+    background-color: darkslateblue;
+    border-radius: 0.25rem;
+    padding-left: 10%;
+    padding-right: 5%;
+    width: 40vw;
+    margin-top: 3%;
+    opacity: 65%;
+    padding-bottom: 3%;
+}
+
+p{
+    color:white;
+    font-family: 'Castoro', serif;
+    font-size: 23px;
+    margin-top: 2px;
+    margin-bottom: 3%;
+    padding-top: 5%;
+}
+
+span{
+    color:white;
+    font-family: 'Castoro', serif;
+    font-size:18px;
+    padding-left: 2%;
+}
+
+
+label{
+    display:flex;
+    margin-bottom: 2%;
+}
+
+.content{
+    width:100vw;
+    display:flex;
+    justify-content: center;
+}
+
+input{
+    display:flex;
+    flex-direction: column;
+    font-size: 23px;
+    margin-bottom: 3%;
+    padding-top: 2%;
+}
+
+.form-control{
+    width:89%;
+}
+
+#comments{
+    width: 80%;
+    height: 200px;
+}
+
+button{
+    color:white;
+    background-color: #36a861;
+    width: 80%;
+    margin-top: 3%;
+    padding-bottom:1%;
+}
+
+@media screen and (max-width: 640px){
+    .form{
+        width: 100vw;
+        margin: 0;
+    }
+}
+
