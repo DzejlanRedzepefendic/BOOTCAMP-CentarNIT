@@ -3,53 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forme</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Domaci 12</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 <body>
-    <div class="content">
-        <div class="content-left">
-            <h3>Your account name is:</h3>
-            <p id="yname"></p>
-            <h3>Your email is:</h3>
-            <p id="yemail"></p>
-            <h3>Subject:</h3>
-            <p id="ysubject"></p>
-            <h3>Message:</h3>
-            <p id="ymessage"></p>
+    <div class="navbar">
+        <div class="yellow">
+            <a id="menu" href="#"><span>Menu</span></a>
+            <button onclick="myFunction()"><i id="hamb" class="fas fa-bars"></i></button>
         </div>
-        <div class="content-right">
-            <div class="aa">
-                <p>Your name</p>
-                <input type="text" id="name" class="form-control">
-                <p>Your Email</p>
-                <input type="email" id="email" class="form-control">
-            </div>
-            <p>Subject</p>
-            <input type="text" id="subject" class="form-control">
-            <p>Message</p>
-            <textarea class="form-control" name="message" id="message" rows="5"  data-rule="required" data-msg="Please write something for us"></textarea>
-            <div class="button-space">
-                <button onclick="dodajPodatke()">Send Message</button>
-            </div>
+        <div class="others">
+            <div class="home"><a href="#">Home</a></div>
+            <div class="gal"><a href="#">Gallery</a></div>
+            <div class="contact"><a href="#">Contact us</a></div>
+            <div class="next"><a href="#">next</a></div>
         </div>
     </div>
-    <script>
-        var i = 0;
-        function dodajPodatke(){
-            var name = document.getElementById("name");
-            var email = document.getElementById("email");
-            var subject = document.getElementById("subject");
-            var message = document.getElementById("message");
-            if(i == 0){
-                document.getElementById("yname").innerHTML += name.value;
-                document.getElementById("yemail").innerHTML += email.value;
-                document.getElementById("ysubject").innerHTML += subject.value;
-                document.getElementById("ymessage").innerHTML += message.value;
-            i++;
-            }
-        }
-    </script>
+    <div id="new">
+        <div class="box"><a href="#">Home</a></div>
+        <div class="box"><a href="#">Gallery</a></div>
+        <div class="box"><a href="#">Contact us</a></div>
+        <div class="box"><a href="#">next</a></div>
+        <div class="box"><a href="#">new</a></div>
+    </div>
+
+
+<script src="script.js"></script>
 </body>
 </html>
