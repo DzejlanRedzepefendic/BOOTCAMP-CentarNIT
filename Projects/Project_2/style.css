@@ -94,8 +94,8 @@ a > h1{
     }
     #nav-fixed{
         visibility: visible;
-        position:fixed;
-        right:500px;
+        position:static;
+        margin-left: 50%;
     }
     #nav-fixed > ul > li{
         display: inline;
@@ -358,7 +358,7 @@ li{
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
-    color:#111;
+    color:rgb(255, 231, 231);
     visibility: hidden;
 }
 
