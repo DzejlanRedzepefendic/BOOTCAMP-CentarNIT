@@ -30,13 +30,14 @@ section{
 
 /* Nav */
 
+
 nav > a{
     text-decoration: none;
     padding-left: 3%;
 }
 
 nav > span,h1{
-    display:inline-flex;
+    display:inline;
     margin: 0;
     font-family: 'Encode Sans SC', sans-serif;
 }
@@ -166,7 +167,7 @@ li{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2%;
+    padding: 5%;
 }
 
 .service > h3{
@@ -190,7 +191,7 @@ li{
 }
 
 .employbord{
-    width: 289px;
+    width: 357px;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -199,7 +200,7 @@ li{
 
 .buislike{
     height: 360px;
-    width: 289px;
+    width: 359px;
     transition: all 0.3s ease 0s;
 }
 
@@ -489,6 +490,7 @@ li{
     }
     .pricing-box{
         display:flex;
+        padding-left: 5%;
     }
 }
 
@@ -699,8 +701,12 @@ li{
     .businessnf,.information{
         width:33%;
     }
+    .information >h3{
+        margin-top: 0;
+    }
     .section8-box{
         display:flex;
+        padding-left: 5%;
     }
     .section8{
         margin-left:0;
