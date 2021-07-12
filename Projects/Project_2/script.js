@@ -14,12 +14,22 @@ function update(){
 $(window).bind('scroll', update);
 
 
-function hoverPortfolio(x, y){
+function hoverPortfolio(x){
     document.getElementById(x).style.visibility = "visible";
-    document.getElementById(y).style.opacity = "0.5";
 }
 
-function notHover(x, y){
+function notHover(x){
     document.getElementById(x).style.visibility = "hidden";
-    document.getElementById(y).style.opacity = "1";
+}
+
+function hambToX(){
+    document.getElementById("hamb").style.visibility = "hidden";
+    document.getElementById("x").style.visibility = "visible";
+    document.getElementById("etc").style.visibility ="visible"
+}
+
+function xToHamb(){
+    document.getElementById("x").style.visibility = "hidden";
+    document.getElementById("hamb").style.visibility = "visible";
+    document.getElementById("etc").style.visibility ="hidden";
 }

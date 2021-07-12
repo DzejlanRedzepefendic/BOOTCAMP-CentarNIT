@@ -16,11 +16,34 @@
         <a href="index.html">
             <span id="nav-logo">e</span><h1>Business</h1>
         </a>
+        <div id="nav-fixed">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Service</li>
+            <li>Portfolio</li>
+            <li>Team</li>
+            <li>Blog</li>
+            <li>Contact</li>
+        </ul>
+        </div>
         <div class="hamb">
-            <i style="color:white;" class="fas fa-bars"></i>
+            <i onclick="hambToX()" style="color:white;" id="hamb" class="fas fa-bars"></i>
+            <i onclick="xToHamb()" style="color:white;" id="x" class="fas fa-times"></i>
         </div>
     </nav>
     <section class="section1">
+        <div id="etc">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Service</li>
+                <li>Portfolio</li>
+                <li>Team</li>
+                <li>Blog</li>
+                <li>Contact</li>
+            </ul>
+        </div>
         <div class="pic-swap">
 
         </div>
@@ -32,7 +55,7 @@
         </div>
         <div class="secbox">
             <div class="secbox1">
-                <a href="#nav-logo"><img id="slika1" src="1.jpg" alt="EBusiness-slika"></a>
+                <a href="#nav-logo"><img id="slika1" src="static/1.jpg" alt="EBusiness-slika"></a>
             </div>
             <div class="secbox2">
                 <h3>PROJECT MAINTENCE</h3>
@@ -99,21 +122,21 @@
         </div>
         <div class="allemployee">
             <div class="employee">
-                <img class="buislike" src="buis1.jpg" alt="">
+                <img class="buislike" src="static/buis1.jpg" alt="">
                 <div class="employbord">
                     <h2>Jhon Mickel</h2>
                     <p>Seo</p>
                 </div>
             </div>
             <div class="employee">
-                <img class="buislike" src="buis2.jpg" alt="">
+                <img class="buislike" src="static/buis2.jpg" alt="">
                 <div class="employbord">
                     <h2>Andrew Arnold</h2>
                     <p>Web Developer</p>
                 </div>
             </div>
             <div class="employee">
-                <img class="buislike" src="buis3.jpeg" alt="">
+                <img class="buislike" src="static/buis3.jpeg" alt="">
                 <div class="employbord">
                     <h2>Jhon Powel</h2>
                     <p>Seo Expert</p>
@@ -124,7 +147,7 @@
     <section class="section4">
         <div class="contact-us">
             <div class="kitchen">
-                <img id="kitc" src="kitc.jpg" alt="">
+                <img id="kitc" src="static/kitc.jpg" alt="">
             </div>
             <div class="greece">
                 <h1>WORKING WITH US</h1>
@@ -147,43 +170,43 @@
                 </div>
             </ul>
             <div class="portfolall">
-                <div onmouseover="hoverPortfolio('content1-text','slikaport1')" onmouseout="notHover('content1-text', 'slikaport1')" class="portfolio1">
-                    <img id="slikaport1" src="ourport1.jpg" alt="portfolio1">
+                <div onmouseover="hoverPortfolio('content1-text')" onmouseout="notHover('content1-text')" class="portfolio1"> 
+                    <img id="slikaport1" src="static/ourport1.jpg" alt="portfolio1">
                     <div id="content1-text" class="content-text">
                         <h2>BUISNESS CITY</h2>
                         <p>Web Development</p>
                     </div>
                 </div>
-                <div onmouseover="hoverPortfolio('content2-text','slikaport2')" onmouseout="notHover('content2-text', 'slikaport2')" class="portfolio1">
-                    <img id="slikaport2" src="ourport2.jpg" alt="portfolio2">
+                <div onmouseover="hoverPortfolio('content2-text')" onmouseout="notHover('content2-text')" class="portfolio1"> 
+                <img id="slikaport2" src="static/ourport2.jpg" alt="portfolio2">
                     <div id="content2-text" class="content-text">
                         <h2>BLUE SEA</h2>
                         <p>Photoshop</p>
                     </div>
                 </div>
-                <div onmouseover="hoverPortfolio('content3-text','slikaport3')" onmouseout="notHover('content3-text', 'slikaport3')" class="portfolio1">
-                    <img id="slikaport3" src="ourport3.jpg" alt="portfolio3">
+                <div onmouseover="hoverPortfolio('content3-text')" onmouseout="notHover('content3-text')" class="portfolio1"> 
+                    <img id="slikaport3" src="static/ourport3.jpg" alt="portfolio3">
                     <div id="content3-text" class="content-text">
                         <h2>BEAUTIFUL NATURE</h2>
                         <p>Web Design</p>
                     </div>
                 </div>
-                <div onmouseover="hoverPortfolio('content4-text','slikaport4')" onmouseout="notHover('content4-text', 'slikaport4')" class="portfolio1">
-                    <img id="slikaport4" src="ourport4.jpg" alt="portfolio4">
+                <div onmouseover="hoverPortfolio('content4-text')" onmouseout="notHover('content4-text')" class="portfolio1"> 
+                    <img id="slikaport4" src="static/ourport4.jpg" alt="portfolio4">
                     <div id="content4-text" class="content-text">
                         <h2>CREATIVE TEAM</h2>
                         <p>Web Design</p>
                     </div>
                 </div>
-                <div onmouseover="hoverPortfolio('content5-text','slikaport5')" onmouseout="notHover('content5-text', 'slikaport5')" class="portfolio1">
-                    <img id="slikaport5" src="ourport5.jpg" alt="portfolio5">
+                <div onmouseover="hoverPortfolio('content5-text')" onmouseout="notHover('content5-text')" class="portfolio1"> 
+                    <img id="slikaport5" src="static/ourport5.jpg" alt="portfolio5">
                     <div id="content5-text" class="content-text">
                         <h2>BEAUTIFUL FLOWERS</h2>
                         <p>Web Development</p>
                     </div>
                 </div>
-                <div onmouseover="hoverPortfolio('content6-text','slikaport6')" onmouseout="notHover('content6-text', 'slikaport6')" class="portfolio1">
-                    <img id="slikaport6" src="ourport6.jpg" alt="portfolio6">
+                <div onmouseover="hoverPortfolio('content6-text')" onmouseout="notHover('content6-text')" class="portfolio1"> 
+                    <img id="slikaport6" src="static/ourport6.jpg" alt="portfolio6">
                     <div id="content6-text" class="content-text">
                         <h2>NIGHT HILL</h2>
                         <p>Photoshop</p>
@@ -267,7 +290,7 @@
         </div>
         <div class="news-flex">
             <div class="news">
-                <img class="news-pic" src="news1.jpg" alt="">
+                <img class="news-pic" src="static/news1.jpg" alt="">
                 <p><span>13 comments</span> <span class="date-span">2016-03-05 / 09:10:16 </span></p>
                 <h2>Assumenda repud eum veniam</h2>
                 <p>Lorem ipsum dolor sit amet conse adipis elit Assumenda repud eum veniam 
@@ -276,7 +299,7 @@
                 <button class="btn4">READ MORE</button>
             </div>
             <div class="news">
-                <img class="news-pic" src="news2.jpg" alt="">
+                <img class="news-pic" src="static/news2.jpg" alt="">
                 <p><span>10 comments</span> <span class="date-span">2016-03-05 / 09:10:16 </span></p>
                 <h2>Lorem ipsum dolor sit amet</h2>
                 <p>Lorem ipsum dolor sit amet conse adipis elit Assumenda repud eum veniam 
@@ -285,7 +308,7 @@
                 <button class="btn4">READ MORE</button>
             </div>
             <div class="news">
-                <img class="news-pic" src="news3.jpg" alt="">
+                <img class="news-pic" src="static/news3.jpg" alt="">
                 <p><span>10 comments</span> <span class="date-span">2016-03-05 / 09:10:16 </span></p>
                 <h2>Lorem ipsum dolor sit amet</h2>
                 <p>Lorem ipsum dolor sit amet conse adipis elit Assumenda repud eum veniam 
