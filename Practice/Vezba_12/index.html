@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="content">
+        <div class="login-form">
+            <input type="text" name="ime" id="ime" placeholder="Unesi svoje ime" onkeyup="showIme()">
+            <input type="text" name="prezime" id="prezime" placeholder="Unesi svoje prezime" onchange="showPrezime()">
+            <input id="range" type="range" onchange="showRange()">
+            <input id="date" type="date" onchange="showDate()">
+            <div class="checkbox">
+                <div class="hels">
+                    <span>Opcija 1</span><input id="check1" type="checkbox">
+                </div>
+                <div class="hels">
+                    <span>Opcija 2</span><input id="check2" type="checkbox">
+                </div>
+                <div class="hels">
+                    <span>Opcija 3</span><input id="check3" type="checkbox">
+                </div>
+                <div class="hels">
+                    <span>Opcija 4</span><input id="check4" type="checkbox">
+                </div>
+            </div>
+            <h2>Zanimanje:</h2>
+            <select name="role" id="dropdown" class="form-control" onchange="showDropdown()">
+                <option disabled="" selected="" value="">Select current role</option>
+                <option value="student">Student</option>
+                <option value="job">Full time job</option>
+                <option value="learner">Full time leaner</option>
+                <option value="prefer">Prefer not to say</option>
+                <option value="other">Other</option>
+            </select>
+            <button onclick="izmeniContent()" id="btn1">SUBMIT</button>
+        </div>
+        <div class="onchange">
+            <h2>Ime:</h2>
+            <p id="prost11"></p>
+            <h2>Prezime:</h2>
+            <p id="prost22"></p>
+            <h2>Range:</h2>
+            <p id="prost33"></p>
+            <h2>vreme   :</h2>
+            <p id="prost44"></p>
+            <h2>Izabrane Opcije:</h2>
+            <p id="prost55"></p>
+            <h2>Po zanimanju:</h2>
+            <p id="prost66"></p>
+        </div>
+        <div class="podaci">
+            <h2>Ime:</h2>
+            <p id="prost1"></p>
+            <h2>Prezime:</h2>
+            <p id="prost2"></p>
+            <h2>Range:</h2>
+            <p id="prost3"></p>
+            <h2>vreme   :</h2>
+            <p id="prost4"></p>
+            <h2>Izabrane Opcije:</h2>
+            <p id="prost5"></p>
+            <h2>Po zanimanju:</h2>
+            <p id="prost6"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

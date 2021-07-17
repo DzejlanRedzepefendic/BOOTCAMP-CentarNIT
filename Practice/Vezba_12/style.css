@@ -1,0 +1,67 @@
+.content{
+    display:flex;
+    justify-content: center;
+}
+
+.login-form{
+    display:flex;
+    flex-direction: column;
+    padding-top: 6%;
+    padding-left: 5%;
+    width:40%;
+}
+
+.login-form > input,select{
+    width: 30%;
+    height: 10%;
+    margin-bottom: 7%;
+}
+
+.checkbox{
+    margin-top:0;
+    display:flex;
+    flex-direction: column;
+}
+
+.checkbox > input{
+    margin-bottom: 2%;
+}
+
+
+.checkbox > span{
+    width:15%;
+}
+
+.hels{
+    display:flex;
+    margin-bottom: 5%;
+}
+
+.hels > input{
+    margin-left: 15%;
+}
+
+#btn1{
+    margin-top:4%;
+    width:40%;
+}
+
+/* 2 Deo */
+
+.podaci{
+    width:40%;
+    padding:5%;
+}
+
+.podaci > h2{
+    margin-top:0;
+}
+
+.onchange{
+    width:40%;
+    padding:5%;
+}
+
+.onchange > h2{
+    margin-top:0;
+}
