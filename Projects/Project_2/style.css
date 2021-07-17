@@ -214,6 +214,7 @@ li{
         width:15%;
         flex-wrap: wrap;
         padding-right: 15%;
+        padding-left: 10%;
     }
     .servicewrap{
         display: flex;
@@ -231,6 +232,12 @@ li{
         width:18%;
         padding-left: 0;
         margin-bottom: 2%;
+    }
+    .buislike{
+        width:100%;
+    }
+    .employbord{
+        width:100%;
     }
 }
 
