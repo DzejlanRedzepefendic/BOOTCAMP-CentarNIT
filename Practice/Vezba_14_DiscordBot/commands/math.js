@@ -28,6 +28,6 @@ module.exports = {
             msg.reply('u can only use add, subtract, multiply and divide...');
         }
             msg.reply('Result is ' + result);
-            if(result<=100 || result<=-100) {return msg.reply('Common dude learn some math...\n stop messin\'\ around with easy tasks.');}
+            if(result< 100 && result > -100) {return msg.reply('Common dude learn some math...\n stop messin\'\ around with easy tasks.');}
 	},
 };
