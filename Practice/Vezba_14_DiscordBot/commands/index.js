@@ -5,4 +5,6 @@ module.exports = {
 	Commands: require('./commands'),
 	Addition: require('./addition'),
 	Math: require('./math'),
+	Hangman: require('./hangman'),
+	Guess: require('./guess'),
 };
