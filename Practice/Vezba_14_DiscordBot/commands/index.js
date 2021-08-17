@@ -7,4 +7,5 @@ module.exports = {
 	Math: require('./math'),
 	Hangman: require('./hangman'),
 	Guess: require('./guess'),
+	Emotion: require('./emotion')
 };
