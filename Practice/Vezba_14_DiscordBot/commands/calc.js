@@ -40,7 +40,8 @@ module.exports = {
             }
             obim = a + b + c
             var s = obim / 2
-            povrsina = Math.sqrt(s * (s - a) * (s - b) * (s - c))
+            const formulaPovrsine = (s * (s - a) * (s - b) * (s - c))
+            povrsina = Math.sqrt(formulaPovrsine)
             msg.reply(`Povrsina je: ${povrsina}`)
             msg.reply(`Obim je: ${obim}`)
         }
