@@ -4,10 +4,10 @@ import ReactDom from 'react-dom'
 // const Greeting = () => {
 //   return React.createElement('h1',{},'hello world');
 // }
-
+import './index.css'
 function BookList() {
   return (
-    <section>
+    <section className='booklist'>
       <Book />
       <Book />
       <Book />
@@ -25,7 +25,7 @@ function BookList() {
 
 const Book = () => {
   return (
-    <article>
+    <article className='book'>
       <Image />
       <Title />
       <Author />
@@ -40,6 +40,10 @@ const Image = () => (
   />
 )
 const Title = () => <h1>The Art of War</h1>
-const Author = () => <h4>Sun Tzu</h4>
+const Author = () => (
+  <h4 style={{ color: '#617d98', foontSize: '0.75rem', marginTop: '0.5rem' }}>
+    Sun Tzu
+  </h4>
+)
 
 ReactDom.render(<BookList />, document.getElementById('root'))
