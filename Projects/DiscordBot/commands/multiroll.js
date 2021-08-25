@@ -36,14 +36,9 @@ module.exports = {
           user: msg.author.username,
         },
       }
-      // console.log(players)
-      // console.log(ids)
       setTimeout(() => {
         let lengthObj = ObjectLength(players)
-        // console.log(lengthObj)
         for (let index = 0; index < lengthObj; index++) {
-          console.log(index, lengthObj)
-          console.log(players[ids[index]].roll)
           if (maxNumber < players[ids[index]].roll)
             maxNumber = players[ids[index]].roll
         }
