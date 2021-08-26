@@ -12,4 +12,5 @@ module.exports = {
   Multigame: require('./multigame'),
   Roll: require('./roll'),
   Multiroll: require('./multiroll'),
+  Usless: require('./usless'),
 }
