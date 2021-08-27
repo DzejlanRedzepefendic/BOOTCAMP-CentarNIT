@@ -1,7 +1,27 @@
-import React from 'react';
+import React from 'react'
+import PropTypes from 'prop-types'
+import defaultImage from '../../../assets/default-image.jpeg'
+const Product = ({ image, name, price }) => {
+  const url = image && image.url
+  return (
+    <article className='product'>
+      <h4>{name}</h4>
+      <img src={url || defaultImage} alt={name || 'default name'} />
+      <h4>${price || 3.99}</h4>
+    </article>
+  )
+}
 
-const Product = () => {
-  return <article className='product'>single product</article>;
-};
+Product.prototype = {
+  image: PropTypes.object.isRequired,
+  name: PropTypes.string.isRequired,
+  price: PropTypes.number.isRequired,
+}
 
-export default Product;
+// Product.defaultProps = {
+//   name: 'default name',
+//   price: 3.99,
+//   image: defaultImage,
+// }
+
+export default Product

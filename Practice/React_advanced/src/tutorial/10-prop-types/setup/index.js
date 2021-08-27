@@ -11,6 +11,7 @@ const Index = () => {
   return (
     <div>
       <h2>products</h2>
+      {/* <img src={defaultImage} /> */}
       <section className='products'>
         {products.map((product) => {
           return <Product key={product.id} {...product} />
