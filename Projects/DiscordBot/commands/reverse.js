@@ -1,5 +1,5 @@
-let ceoString = []
-let NoviString = ''
+let pomocniArray = []
+let finalnaPoruka = ''
 module.exports = {
   name: 'reverse',
   aliases: [],
@@ -10,14 +10,14 @@ module.exports = {
   usage: false,
   // eslint-disable-next-line no-unused-vars
   execute(msg, args) {
+    let inputValue = args
     for (let index = 0; index < args.length; index++) {
-      let swap = args[index].split('')
+      let swap = inputValue[index].split('')
       swap.reverse()
-      ceoString.push(swap.join(''))
+      pomocniArray.push(swap.join(''))
     }
-    NoviString = ceoString.join(' ')
-    msg.reply(NoviString)
-    ceoString = []
-    return (NoviString = '')
+    finalnaPoruka = pomocniArray.join(' ')
+    msg.reply(finalnaPoruka)
+    return (pomocniArray = [])
   },
 }
