@@ -16,6 +16,8 @@ module.exports = {
       ceoString.push(swap.join(''))
     }
     NoviString = ceoString.join(' ')
-    return msg.reply(NoviString)
+    msg.reply(NoviString)
+    ceoString = []
+    return (NoviString = '')
   },
 }
