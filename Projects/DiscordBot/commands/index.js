@@ -13,4 +13,5 @@ module.exports = {
   Roll: require('./roll'),
   Multiroll: require('./multiroll'),
   Usless: require('./usless'),
+  Reverse: require('./reverse'),
 }
