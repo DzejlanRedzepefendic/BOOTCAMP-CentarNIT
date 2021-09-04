@@ -11,3 +11,16 @@ export const nesto = (params) => {
   }
   return noviObject
 }
+
+export const myPromise = new Promise((resolve, reject) => {
+  let randomNumber
+  setTimeout(() => {
+    randomNumber = Math.ceil(Math.random() * 10)
+    if (randomNumber >= 5) {
+      resolve(randomNumber)
+    } else {
+      reject(randomNumber)
+    }
+  }, 1000)
+})
+
