@@ -14,5 +14,6 @@ module.exports = {
   Multiroll: require('./multiroll'),
   Usless: require('./usless'),
   Reverse: require('./reverse'),
-  Motivation: require('./motivation')
+  Motivation: require('./motivation'),
+  RandomQuotes: require('./randomquotes'),
 }
