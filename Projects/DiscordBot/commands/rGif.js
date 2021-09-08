@@ -9,21 +9,17 @@ module.exports = {
   usage: false,
   // eslint-disable-next-line no-unused-vars
   execute(msg, args) {
-    if (args.length === 1) {
-      randomNumber = Math.floor(Math.random() * 18 + 1)
-      fetch(`https://g.tenor.com/v1/random?q=${args[0]}`)
-        .then((res) => {
-          return res.json()
-        })
-        .then((result) => {
-          console.log(result)
-          return msg.reply(`${result.results[randomNumber].url}`)
-        })
-        .catch((e) => {
-          console.log(e)
-        })
-    } else {
-      msg.reply('samo jedan tag')
-    }
+    fetch(`https://g.tenor.com/v1/random?q=${args[0]}`)
+      .then((res) => {
+        return res.json()
+      })
+      .then((result) => {
+        randomNumber = Math.floor(Math.random() * result.results.length + 1)
+        console.log(randomNumber, result.results.length)
+        msg.reply(`${result.results[randomNumber].url}`)
+      })
+      .catch((e) => {
+        console.log(e)
+      })
   },
 }
