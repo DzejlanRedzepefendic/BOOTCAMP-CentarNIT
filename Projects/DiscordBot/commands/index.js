@@ -16,4 +16,5 @@ module.exports = {
   Reverse: require('./reverse'),
   Motivation: require('./motivation'),
   RandomQuotes: require('./randomquotes'),
+  rGif: require('./rGif'),
 }
