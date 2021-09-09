@@ -1,5 +1,4 @@
 const fetch = require('node-fetch')
-const json = require('json')
 
 async function tagOne(tag1) {
   try {
