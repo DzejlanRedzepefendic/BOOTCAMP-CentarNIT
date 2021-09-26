@@ -2,7 +2,7 @@ import { nesto } from './test.js'
 
 let randomLetters = 'sfsfasfsafafadasdadasdads'
 
-console.log(nesto(randomLetters))
+// console.log(nesto(randomLetters))
 
 try {
   var data = await fetch('https://api.quotable.io/random')
